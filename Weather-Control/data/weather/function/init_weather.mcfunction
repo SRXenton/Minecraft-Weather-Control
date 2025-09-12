@@ -27,7 +27,7 @@ scoreboard players set _hoursRainMin WeatherCycle 3
 scoreboard players set _hoursRainMax WeatherCycle 8
 
 # Ticks per ingame hours
-scoreboard players set #hoursInTicks WeatherCycle 2400
+scoreboard players set #hoursInTicks WeatherCycle 1000
 
 # Values for calculate how often for thunder, in percent when it's raining - Not Active
 scoreboard players set _percentOfPossiblityThunder WeatherCycle 10
