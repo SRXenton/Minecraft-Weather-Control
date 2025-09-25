@@ -23,6 +23,10 @@ _hoursRainMax -> Maximum time in ingame hours
 
 Between this both values, will be create a random value for the duration weather is raining
 
+-------------------------------------
+Video - Tutorial
+-------------------------------------
+DE: https://youtu.be/gCr6tE1-Xog
 
 -------------------------------------
 Installation, start and settings
