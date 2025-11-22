@@ -1,7 +1,9 @@
 # Minecraft-Weather-Control
 Minecraft datapack for own weather control, with option to make over scoreboard settings for the weather control
 
-Datapack is made for Minecraft Java - Version 1.21.6 to 1.21.10 and tested
+Datapack is made for Minecraft Java:
+    Version 1.21.6 to 1.21.10 and tested, you find it in branch v1.21.6-1.21.10
+    Version 1.21.11-pre is find in dev-1.21.11
 
 This datapack replace the control from Minecraft weather cycle.
 In this Version weather cycle only between Clear and Rain. Thunder is upcomming in other versions
