@@ -1,5 +1,5 @@
 # Set the Gamerule to disable weather cycle controled by Minecraft
-gamerule doWeatherCycle false
+gamerule advance_weather false
 
 # Remove a possible existing WeatherCycle scoreboard and create a new
 scoreboard objectives remove WeatherCycle
