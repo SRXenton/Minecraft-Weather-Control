@@ -1,16 +1,14 @@
 ## Changings:
 
 
-# Datapack structur:
+# Datapack structure:
 
 New datapack structure in namings
 
-# (+) = New
 # (>) = Edit
-# (-) = Delete
 # (*) = Old/Available
 
-* Main
+* Weather-Control
     * data
         > weather -> weather-control
             * function
@@ -27,5 +25,6 @@ New datapack structure in namings
 
 Adjust in tick.json value from control_switch_weather to w_c__control_switch_weather
 
+# initialization
 
-
+tellraw output after run w_c__init_weather.mcfunction
