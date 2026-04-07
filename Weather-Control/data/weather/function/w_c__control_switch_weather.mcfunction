@@ -1,4 +1,3 @@
-
 # Reduce every tick at one in scoreboard for next rain
 execute if score _nextWeatherRain WeatherCycle matches 1.. run scoreboard players remove _nextWeatherRain WeatherCycle 1
 
@@ -11,7 +10,6 @@ execute if score _nextWeatherClear WeatherCycle matches 0 if score _isSwitch Wea
 
 # Function calculate new random values for weather switches
 execute if score _nextWeatherClear WeatherCycle matches 0 if score _nextWeatherRain WeatherCycle matches 0 run function weather-control:w_c__calculate_for_random
-
 
 ## Debug:
 # tellraw Xenton_de "Debug csw"

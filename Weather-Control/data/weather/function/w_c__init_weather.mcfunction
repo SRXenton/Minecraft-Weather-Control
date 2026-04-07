@@ -32,8 +32,8 @@ scoreboard players set #hoursInTicks WeatherCycle 1000
 ## Set value in scoreboard, weather control active
 scoreboard players set #is_active WeatherCycle 1
 
-
-
+## Give text output to subject runs this function
+tellraw @s [{text:"Datapack: ",color: "gold"},{text:"Weather Control is ", color:"white"},{text:"initialized",color:"green"}]
 
 # Values for calculate how often for thunder, in percent when it's raining - Not Active
 #scoreboard players set _percentOfPossiblityThunder WeatherCycle 10
@@ -43,5 +43,4 @@ scoreboard players set #is_active WeatherCycle 1
 
 
 #Debug
-#scoreboard objectives setdisplay sidebar WeatherCycle
-tellraw Xenton_de "Debug: iw"
+scoreboard objectives setdisplay sidebar WeatherCycle
