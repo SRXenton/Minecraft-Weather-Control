@@ -43,4 +43,4 @@ tellraw @s [{text:"Datapack: ",color: "gold"},{text:"Weather Control is ", color
 
 
 #Debug
-scoreboard objectives setdisplay sidebar WeatherCycle
+#scoreboard objectives setdisplay sidebar WeatherCycle
