@@ -4,6 +4,8 @@ gamerule advance_weather false
 # Remove a possible existing WeatherCycle scoreboard and create a new
 scoreboard objectives remove WeatherCycle
 scoreboard objectives add WeatherCycle dummy
+scoreboard objectives add WeatherCycleSP trigger
+scoreboard objectives add WeatherCycleV trigger
 
 # Clear Storage
 data remove storage weather:values data
