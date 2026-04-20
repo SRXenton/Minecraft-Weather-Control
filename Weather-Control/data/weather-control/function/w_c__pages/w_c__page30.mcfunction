@@ -26,7 +26,13 @@ $dialog show @s {\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Range: 1 real minutes until $(m) real minutes and value must be lesser than maximum"\
+                text: "Range: Minimum 1 real minutes until maximum $(m) real minutes"\
+            }\
+        },\
+        {\
+            "type": "minecraft:plain_message",\
+            "contents": {\
+                text: "!!! Value must be lesser than maximum !!!"\
             }\
         },\
         {\

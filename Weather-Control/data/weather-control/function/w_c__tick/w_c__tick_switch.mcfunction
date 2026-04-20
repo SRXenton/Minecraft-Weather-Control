@@ -1,8 +1,4 @@
-execute as @p[scores={WeatherCycleV=1..}] if data storage weather:values {temp:{w:"mic"}} run function weather-control:w_c__functions/w_c__set_mic
-execute as @p[scores={WeatherCycleV=1..}] if data storage weather:values {temp:{w:"mxc"}} run function weather-control:w_c__functions/w_c__set_mxc
-
-execute as @p[scores={WeatherCycleV=1..}] if data storage weather:values {temp:{w:"mir"}} run function weather-control:w_c__functions/w_c__set_mir
-execute as @p[scores={WeatherCycleV=1..}] if data storage weather:values {temp:{w:"mxr"}} run function weather-control:w_c__functions/w_c__set_mxr
+execute as @p[scores={WeatherCycleV=1..}] run function weather-control:w_c__functions/w_c__preparing_change_value
 
 execute as @p[scores={WeatherCycleSP=10}] store result storage weather:values temp.v int 0.001 run data get storage weather:values data.minToRain
 execute as @p[scores={WeatherCycleSP=10}] store result storage weather:values temp.m int 0.001 run data get storage weather:values data.maxToRain
