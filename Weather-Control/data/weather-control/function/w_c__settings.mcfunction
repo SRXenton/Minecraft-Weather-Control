@@ -1,43 +1,10 @@
-# Min Clear: Page 10
-# Max Clear: Page 20
-# Min Rain: Page 30
-# Max Rain: Page 40
-
 data remove storage weather:values temp
 data merge storage weather:values {temp:{}}
 
-scoreboard players enable @s WeatherCycleSP
+execute store result storage weather:values temp.minClear int 1 run scoreboard players get _hoursClearMin WeatherCycle
+execute store result storage weather:values temp.maxClear int 1 run scoreboard players get _hoursClearMax WeatherCycle
+execute store result storage weather:values temp.minRain int 1 run scoreboard players get _hoursRainMin WeatherCycle
+execute store result storage weather:values temp.maxRain int 1 run scoreboard players get _hoursRainMax WeatherCycle
 
-dialog show @s {\
-    type:"minecraft:multi_action",\
-    title:"Setting Weather Control",\
-    body:[\
-        {\
-            "type": "minecraft:plain_message",\
-            "contents": {\
-                text: "Change timings"\
-            }\
-        }\
-    ],\
-    can_close_with_escape:true,\
-    pause:false,\
-    actions:[\
-        {\
-            label:"Minimum Weather is \"CLEAR\"",\
-            action:{type:"minecraft:run_command",command:"trigger WeatherCycleSP set 10"}\
-        },\
-        {\
-            label:"Maximum Weather is \"CLEAR\"",\
-            action:{type:"minecraft:run_command",command:"trigger WeatherCycleSP set 20"}\
-        },\
-        {\
-            label:"Minimum Weather is \"RAIN\"",\
-            action:{type:"minecraft:run_command",command:"trigger WeatherCycleSP set 30"}\
-        },\
-        {\
-            label:"Maximum Weather is \"RAIN\"",\
-            action:{type:"minecraft:run_command",command:"trigger WeatherCycleSP set 40"}\
-        },\
-    ],\
-    exit_action: {label:"Close",action:{type:"minecraft:run_command",command:"trigger WeatherCycleSP set 1"}}\
-}
+
+function weather-control:w_c__pages/w_c__page0 with storage weather:values temp
