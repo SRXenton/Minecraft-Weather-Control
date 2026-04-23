@@ -51,7 +51,12 @@ This command show a list of all installed datapacks. The list must include [file
 Next step, run command: /function weather-control:w_c__init_weather<br>
 With this command, will set all scoreboard values and the datapack starts to work<br>
 
-Commands for settings:<br>
+Dialogwindow for Setting<br>
+/function weather-control:w_c__settings<br>
+Here you can see all values for min and max, and you can set the values direct here in this dialog<br>
+
+# Alternative:<br>
+Commands for settings over chat:<br>
 Replace (values) with integer, number without point.<br>
 
 Ingame Hours for the weather is clear, between min and max.<br>
