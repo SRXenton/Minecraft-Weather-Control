@@ -1,3 +1,5 @@
+## Check values and call functions to switch weather
+## Note: move in functions possible??
 # Reduce every tick at one in scoreboard for next rain
 execute if score _nextWeatherRain WeatherCycle matches 1.. run scoreboard players remove _nextWeatherRain WeatherCycle 1
 
