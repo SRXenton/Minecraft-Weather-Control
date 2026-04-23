@@ -1,0 +1,30 @@
+## Changings:
+
+
+# Datapack structure:
+
+New datapack structure in namings
+
+# (>) = Edit
+# (*) = Old/Available
+
+* Weather-Control
+    * data
+        > weather -> weather-control
+            * function
+                > calculate_for_random.mcfunction -> w_c__calculate_for_random.mcfunction
+                > control_switch_weather.mcfunction -> w_c__control_switch_weather.mcfunction
+                > init_weather.mcfunction -> w_c__init_weather.mcfunction
+                > random.mcfunction -> w_c__random.mcfunction
+                > switch_weather.mcfunction -> w_c__switch_weather.mcfunction
+                > to_clear.mcfunction -> w_c__to_clear.mcfunction
+                > to_rain.mcfunction -> w_c__to_rain.mcfunction
+
+
+# tick.json:
+
+Adjust in tick.json value from control_switch_weather to w_c__control_switch_weather
+
+# initialization
+
+tellraw output after run w_c__init_weather.mcfunction

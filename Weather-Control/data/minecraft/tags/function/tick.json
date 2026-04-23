@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "weather:control_switch_weather"
+        "weather-control:w_c__control_switch_weather",
+        "weather-control:w_c__tick/w_c__tick_switch"
     ]
 }

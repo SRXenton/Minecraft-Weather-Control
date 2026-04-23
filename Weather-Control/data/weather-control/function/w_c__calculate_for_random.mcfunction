@@ -1,3 +1,5 @@
+## Calculate storage values and write in storage
+## Note: move in functions possible??
 # Calculate minimum ticks for weather clear to rain
 scoreboard players operation #op WeatherCycle = #hoursInTicks WeatherCycle
 scoreboard players operation #op WeatherCycle *= _hoursClearMin WeatherCycle
@@ -19,4 +21,4 @@ scoreboard players operation #op WeatherCycle *= _hoursRainMax WeatherCycle
 execute store result storage weather:values data.maxToClear int 1 run scoreboard players get #op WeatherCycle
 
 # Call function and take over values for random calculate
-function weather:random with storage weather:values data
+function weather-control:w_c__random with storage weather:values data
