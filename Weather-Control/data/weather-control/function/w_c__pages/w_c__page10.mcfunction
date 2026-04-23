@@ -1,5 +1,9 @@
-#execute unless entity @s[scores={WeatherCycleSP=10}] run return -1
+## Dialog for: Minimum weather is clear
 
+# When jump in this function, without come over main page, exit function
+execute unless entity @s[scores={WeatherCycleSP=10}] run return -1
+
+# Set marker for page
 data modify storage weather:values temp.w set value "mic"
 
 scoreboard players enable @s WeatherCycleSP

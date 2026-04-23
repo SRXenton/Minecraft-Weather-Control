@@ -1,12 +1,17 @@
-#execute unless entity @s[scores={WeatherCycleSP=10}] run return -1
+## Dialog for: Maximum weather is clear
 
+# When jump in this function, without come over main page, exit function
+execute unless entity @s[scores={WeatherCycleSP=20}] run return -1
+
+# Set marker for page
 data modify storage weather:values temp.w set value "mxc"
+scoreboard players add @s WeatherCycleSP 1
 
+# Enable trigger
 scoreboard players enable @s WeatherCycleSP
 scoreboard players enable @s WeatherCycleV
 
-scoreboard players add @s WeatherCycleSP 1
-
+# Show dialog
 $dialog show @s {\
     type:"minecraft:confirmation",\
     title:"Setting Weather Control",\

@@ -1,3 +1,4 @@
+## Init function to initialise weather control
 # Set the Gamerule to disable weather cycle controled by Minecraft
 gamerule advance_weather false
 

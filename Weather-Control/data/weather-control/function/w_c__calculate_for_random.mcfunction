@@ -1,3 +1,5 @@
+## Calculate storage values and write in storage
+## Note: move in functions possible??
 # Calculate minimum ticks for weather clear to rain
 scoreboard players operation #op WeatherCycle = #hoursInTicks WeatherCycle
 scoreboard players operation #op WeatherCycle *= _hoursClearMin WeatherCycle
