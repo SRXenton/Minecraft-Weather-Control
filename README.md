@@ -35,12 +35,10 @@ Between this both values, will be create a random value for the duration weather
 
 # -------------------------------------<br>
 # Video - Tutorial<br>
-# -------------------------------------<br>
 DE: https://youtu.be/gCr6tE1-Xog
 
 # -------------------------------------<br>
 # Installation, start and settings<br>
-# -------------------------------------<br>
 
 Install Path:<br>
 Minecraft Local -> saves -> (World) -> datapacks<br>
