@@ -16,13 +16,13 @@ One day (Day and Night) in Minecraft has 20 minutes or 24000 Ticks. The Datapack
 <br>
 To change the time, you can do it in a dialogwindow, or you can do it over commands<br>
 
-# -------------------------------------<br>
-# Video - Tutorial<br>
-DE: https://youtu.be/gCr6tE1-Xog
 
 # -------------------------------------<br>
-# Manuel
+# Manual
 You find it now on the wikipage
+Videos:<br>
+DE: https://youtu.be/gCr6tE1-Xog<br>
+EN: https://www.youtube.com/watch?v=aAZFINrGljc<br>
 
 # -------------------------------------<br>
 # Installation, start and settings<br>
