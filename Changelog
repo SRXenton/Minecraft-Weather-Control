@@ -1,6 +1,17 @@
 ## Changelog
 
-# 26.4.1 (actual)
+# 26.5.0 (actual/Mainbranch)
+Changes:
+- rename all mcfuncions.
+-- Now only 2 functions have clear names:
+--- /function weather-control:w_c___settings
+--- /function weather-control:w_c___init_weather
+-- All other function now have acronyms
+
+- Remove Bug:
+-- Settings: Sometimes show the wromg timings
+
+# 26.4.1 
 - Rename internal files and folders
 - New Function: Dialogwindow for actual values and settings
 
