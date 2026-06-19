@@ -4,4 +4,5 @@ $execute if score @s WeatherCycleV matches $(maxRain).. run tellraw @s "Value fo
 $execute if score @s WeatherCycleV matches $(maxRain).. run return -1
 
 execute store result score _hoursRainMin WeatherCycle run scoreboard players get @s WeatherCycleV
+execute store result storage weather:values data.minToClear int 1000 run scoreboard players get @s WeatherCycleV
 

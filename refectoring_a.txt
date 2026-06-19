@@ -4,3 +4,8 @@ Changes:
 --- /function weather-control:w_c___settings
 --- /function weather-control:w_c___init_weather
 -- All other function now have acronyms
+
+
+
+Testings in Minecraft Java:
+V 1.21.11: 
