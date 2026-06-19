@@ -1,3 +1,5 @@
+### Reset Pages
+
 trigger WeatherCycleSP set 0
 scoreboard players set @s WeatherCycleSP 0
 

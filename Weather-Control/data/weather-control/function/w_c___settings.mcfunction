@@ -12,4 +12,4 @@ execute store result storage weather:values temp.minRain int 1 run scoreboard pl
 execute store result storage weather:values temp.maxRain int 1 run scoreboard players get _hoursRainMax WeatherCycle
 
 # Call function with storage temp
-function weather-control:w_c__pages/w_c__page0 with storage weather:values temp
+function weather-control:w_c__pages/p0 with storage weather:values temp

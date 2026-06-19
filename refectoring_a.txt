@@ -1,6 +1,3 @@
-## Changelog
-
-# 26.5.0 (actual/Mainbranch)
 Changes:
 - rename all mcfuncions.
 -- Now only 2 functions have clear names:
@@ -11,9 +8,8 @@ Changes:
 - Remove Bug:
 -- Settings: Sometimes show the wromg timings
 
-# 26.4.1 
-- Rename internal files and folders
-- New Function: Dialogwindow for actual values and settings
 
-
-# 26.1.1 Fist official version
+Testings in Minecraft Java:
+V 1.21.11: Run
+V 26.1 - V26.1.2: Run
+V 26.2: Run

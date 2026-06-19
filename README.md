@@ -1,41 +1,32 @@
 # Minecraft-Weather-Control
 Minecraft datapack for own weather control, with option to make over scoreboard or dialog windows settings for the weather control<br>
 <br>
-Datapack is made for Minecraft Java:<br>
-    The actual verion (for V26.1.2) is in the main branch,<br>
-    Version 1.21.6 to 1.21.10 and tested, you find it in branch v1.21.6-1.21.10,,<br>
-    Version 1.21.11, 26.1, 26.1.1 is find in V1.21.11+,,<br>
-    Version 26.1, 26.1.1 and 26.1.1 is tested and you find it in main branch<br>
+Datapack is made for Minecraft Java<br>
+Branches:
+- Main: The actual datapack verion V26.5.0<br>
+- W_C-V26.4.1: Datapack version V26.4.1 is tested in MC V1.21.11 and V26.1.x
+- v1.21.6-1.21.10: MC Version 1.21.6 to 1.21.10 and tested<br>
+- V1.21.11+: MC Version 1.21.11, 26.1, 26.1.1 and tested<br>
 
 This datapack replace the control from Minecraft weather cycle.<br>
-In this Version weather cycle only between Clear and Rain. Thunder is upcomming in the future<br>
+In this Version weather cycle only between Clear and Rain. It is possible Thunder is upcomming in the future<br>
 It is possible to change the settings ingame, without programming experience in Minecraft datapacks. The commands for that, are in the end of this readme.<br>
 The duration for clear and raining is a random value between values.<br>
 <br>
 One day (Day and Night) in Minecraft has 20 minutes or 24000 Ticks. The Datapack use Ticks. One Ingame hours are 1000 Ticks.<br>
 <br>
-<br>
-# Dialogwindow:<br>
-You can see here the minimum and maximum values in real time minutes for the duration wether is clear and raining.<br>
-Additional it is possible to set here the values<br>
-<br>
-# Commands:<br>
-Duration for weather is clear:<br>
-_hoursClearMin -> Minimum real time in ingame hours<br>
-_hoursClearMax -> Maximum real time in ingame hours<br>
-<br>
-Between this both values, will be create a random value for the duration weather is clear<br>
-<br>
-<br>
-Duration for weather is raining:<br>
-_hoursRainMin -> Minimum real time in ingame hours<br>
-_hoursRainMax -> Maximum real time in ingame hours<br>
-<br>
-Between this both values, will be create a random value for the duration weather is raining<br>
+To change the time, you can do it in a dialogwindow, or you can do it over commands<br>
+
 
 # -------------------------------------<br>
-# Video - Tutorial<br>
-DE: https://youtu.be/gCr6tE1-Xog
+# Manual
+You find it now on the wikipage:<br>
+- Until data pack version V26.4.1: [Link](https://github.com/SRXenton/Minecraft-Weather-Control/wiki/Manual-until-Weather-Control-V26.4.1)
+- Since data pack version V26.5.0: [Link](https://github.com/SRXenton/Minecraft-Weather-Control/wiki/Manual-since-Weather-Control-V26.5.0)
+
+Videos:<br>
+DE: https://youtu.be/gCr6tE1-Xog<br>
+EN: https://www.youtube.com/watch?v=aAZFINrGljc<br>
 
 # -------------------------------------<br>
 # Installation, start and settings<br>
@@ -47,23 +38,10 @@ Minecraft Server -> (World) -> datapack<br>
 
 Check in Minecraft, is datapack installed: /datapack list<br>
 This command show a list of all installed datapacks. The list must include [file/Weather-Control (world)]. If this not the case, check the installation path.<br>
+Since Datapack Version V26.5.0:
+Next step, run command: /function weather-control:w_c___init_weather<br>
 
+
+Until Datapack Version V26.4.1:
 Next step, run command: /function weather-control:w_c__init_weather<br>
 With this command, will set all scoreboard values and the datapack starts to work<br>
-
-Dialogwindow for Setting<br>
-/function weather-control:w_c__settings<br>
-Here you can see all values for min and max, and you can set the values direct here in this dialog<br>
-
-# Alternative:<br>
-Commands for settings over chat:<br>
-Replace (values) with integer, number without point.<br>
-
-Ingame Hours for the weather is clear, between min and max.<br>
-/scoreboard players set _hoursClearMin WeatherCycle (value)<br>
-/scoreboard players set _hoursClearMax WeatherCycle (value)<br>
-
-Ingame Hours for the weather is raining, between min and max.<br>
-/scoreboard players set _hoursRainMin WeatherCycle (value)<br>
-/scoreboard players set _hoursRainMax WeatherCycle (value)<br>
-
