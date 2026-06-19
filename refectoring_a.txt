@@ -1,0 +1,6 @@
+Changes:
+- rename all mcfuncions.
+-- Now only 2 functions have clear names:
+--- /function weather-control:w_c___settings
+--- /function weather-control:w_c___init_weather
+-- All other function now have acronyms

@@ -3,7 +3,7 @@ Minecraft datapack for own weather control, with option to make over scoreboard 
 <br>
 Datapack is made for Minecraft Java<br>
 Branches:
-- Main: The actual verion for V26.1+<br>
+- Main: The actual verion is for Minecraft Java V26.1.x+<br>
 - v1.21.6-1.21.10: MC Version 1.21.6 to 1.21.10 and tested<br>
 - V1.21.11+: MC Version 1.21.11, 26.1, 26.1.1 and tested<br>
 
@@ -19,7 +19,10 @@ To change the time, you can do it in a dialogwindow, or you can do it over comma
 
 # -------------------------------------<br>
 # Manual
-You find it now on the wikipage
+You find it now on the wikipage:<br>
+- Until data pack version V26.4.1: [Link](https://github.com/SRXenton/Minecraft-Weather-Control/wiki/Manual-until-Weather-Control-V26.4.1)
+- Since data pack version V26.5.0: [Link](https://github.com/SRXenton/Minecraft-Weather-Control/wiki/Manual-since-Weather-Control-V26.5.0)
+
 Videos:<br>
 DE: https://youtu.be/gCr6tE1-Xog<br>
 EN: https://www.youtube.com/watch?v=aAZFINrGljc<br>
@@ -34,6 +37,6 @@ Minecraft Server -> (World) -> datapack<br>
 
 Check in Minecraft, is datapack installed: /datapack list<br>
 This command show a list of all installed datapacks. The list must include [file/Weather-Control (world)]. If this not the case, check the installation path.<br>
-
+Until Datapack Version 
 Next step, run command: /function weather-control:w_c__init_weather<br>
 With this command, will set all scoreboard values and the datapack starts to work<br>
