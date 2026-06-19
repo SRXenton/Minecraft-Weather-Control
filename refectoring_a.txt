@@ -5,6 +5,8 @@ Changes:
 --- /function weather-control:w_c___init_weather
 -- All other function now have acronyms
 
+- Remove Bug:
+-- Settings: Sometimes show the wromg timings
 
 
 Testings in Minecraft Java:
