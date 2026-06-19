@@ -1,0 +1,15 @@
+Changes:
+- rename all mcfuncions.
+-- Now only 2 functions have clear names:
+--- /function weather-control:w_c___settings
+--- /function weather-control:w_c___init_weather
+-- All other function now have acronyms
+
+- Remove Bug:
+-- Settings: Sometimes show the wromg timings
+
+
+Testings in Minecraft Java:
+V 1.21.11: Run
+V 26.1 - V26.1.2: Run
+V 26.2: Run

@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "weather-control:w_c__control_switch_weather",
-        "weather-control:w_c__tick/w_c__tick_switch"
+        "weather-control:w_c__functions/csw",
+        "weather-control:w_c__tick/ts"
     ]
 }
