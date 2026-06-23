@@ -4,7 +4,7 @@
 execute unless entity @s[scores={WeatherCycleSP=40}] run return -1
 
 # Set marker for page
-data modify storage weather:values temp.w set value "mxr"
+#data modify storage weather:values temp.w set value "mxr"
 scoreboard players add @s WeatherCycleSP 1
 
 # Enable trigger
@@ -31,7 +31,7 @@ $dialog show @s {\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Range: Greater $(m) real minutes until 1000 real minutes"\
+                text: "Range: Greater $(rtMinutesMinimumWeatherIsRain) real minutes until 1000 real minutes"\
             }\
         },\
         {\
@@ -42,7 +42,7 @@ $dialog show @s {\
         },\
     ],\
     inputs:[\
-        {type:"minecraft:text",key:"wcv",label:"Maximum Value",initial:"$(v)"}\
+        {type:"minecraft:text",key:"wcv",label:"Maximum Value",initial:"$(rtMinutesMaximumWeatherIsRain)"}\
     ],\
     can_close_with_escape:true,\
     pause:false,\
