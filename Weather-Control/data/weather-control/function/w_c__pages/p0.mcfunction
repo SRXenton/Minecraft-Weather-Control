@@ -1,7 +1,8 @@
-# Min Clear: Page 10
-# Max Clear: Page 20
-# Min Rain: Page 30
-# Max Rain: Page 40
+### Page 0: Setting main page
+## Min Clear: Page 10
+## Max Clear: Page 20
+## Min Rain: Page 30
+## Max Rain: Page 40
 
 
 

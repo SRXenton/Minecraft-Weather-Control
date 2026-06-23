@@ -1,16 +1,17 @@
-## Dialog for: Minimum weather is clear
+### Dialog for: Minimum weather is clear
 
-# When jump in this function, without come over main page, exit function
+## When jump in this function, without come over main page, exit function
 execute unless entity @s[scores={WeatherCycleSP=10}] run return -1
 
-# Set marker for page
-# data modify storage weather:values temp.w set value "mic"
-
+## Enable trigger in scoreboards
 scoreboard players enable @s WeatherCycleSP
 scoreboard players enable @s WeatherCycleV
 
+## Add 1 to page scoreboard
 scoreboard players add @s WeatherCycleSP 1
 
+
+## Show dialog
 $dialog show @s {\
     type:"minecraft:confirmation",\
     title:"Setting Weather Control",\
