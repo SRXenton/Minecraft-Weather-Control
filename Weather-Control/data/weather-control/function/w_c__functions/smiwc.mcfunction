@@ -6,3 +6,6 @@ $execute if score @s WeatherCycleV matches $(m).. run return -1
 
 ## Write new value in data storage
 execute store result storage weather:values data.rtMinutesMinimumWeatherIsClear int 1 run scoreboard players get @s WeatherCycleV
+
+## Debug
+# tellraw @a [{text:"----"},{score:{name:"@s",objective:"WeatherCycleV"}}]
