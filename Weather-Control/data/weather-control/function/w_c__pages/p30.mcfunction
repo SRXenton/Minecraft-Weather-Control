@@ -1,13 +1,12 @@
-## Dialog for: Minimum weather is raining
+### Dialog for: Minimum weather is raining
 
-# When jump in this function, without come over main page, exit function
+## When jump in this function, without come over main page, exit function
 execute unless entity @s[scores={WeatherCycleSP=30}] run return -1
 
-# Set marker for page
-data modify storage weather:values temp.w set value "mir"
+## Add 1 to page scoreboard
 scoreboard players add @s WeatherCycleSP 1
 
-# Enable trigger
+## Enable trigger in scoreboards
 scoreboard players enable @s WeatherCycleSP
 scoreboard players enable @s WeatherCycleV
 
@@ -31,7 +30,7 @@ $dialog show @s {\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Range: Minimum 1 real minutes until maximum $(m) real minutes"\
+                text: "Range: Minimum 1 real minutes until maximum $(rtMinutesMaximumWeatherIsRain) real minutes"\
             }\
         },\
         {\
@@ -48,7 +47,7 @@ $dialog show @s {\
         },\
     ],\
     inputs:[\
-        {type:"minecraft:text",key:"wcv",label:"Minimum Value",initial:"$(v)"}\
+        {type:"minecraft:text",key:"wcv",label:"Minimum Value",initial:"$(rtMinutesMinimumWeatherIsRain)"}\
     ],\
     can_close_with_escape:true,\
     pause:false,\

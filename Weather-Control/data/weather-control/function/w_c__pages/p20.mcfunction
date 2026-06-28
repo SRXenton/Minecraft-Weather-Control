@@ -3,15 +3,14 @@
 # When jump in this function, without come over main page, exit function
 execute unless entity @s[scores={WeatherCycleSP=20}] run return -1
 
-# Set marker for page
-data modify storage weather:values temp.w set value "mxc"
+## Add 1 to page scoreboard
 scoreboard players add @s WeatherCycleSP 1
 
-# Enable trigger
+## Enable trigger in scoreboards
 scoreboard players enable @s WeatherCycleSP
 scoreboard players enable @s WeatherCycleV
 
-# Show dialog
+## Show dialog
 $dialog show @s {\
     type:"minecraft:confirmation",\
     title:"Setting Weather Control",\
@@ -31,7 +30,7 @@ $dialog show @s {\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Range: Greater $(m) real minutes until 1000 real minutes"\
+                text: "Range: Greater $(rtMinutesMinimumWeatherIsClear) real minutes until 1000 real minutes"\
             }\
         },\
         {\
@@ -42,7 +41,7 @@ $dialog show @s {\
         },\
     ],\
     inputs:[\
-        {type:"minecraft:text",key:"wcv",label:"Maximum Value",initial:"$(v)"}\
+        {type:"minecraft:text",key:"wcv",label:"Maximum Value",initial:"$(rtMinutesMaximumWeatherIsClear)"}\
     ],\
     can_close_with_escape:true,\
     pause:false,\

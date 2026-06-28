@@ -1,7 +1,8 @@
-# Min Clear: Page 10
-# Max Clear: Page 20
-# Min Rain: Page 30
-# Max Rain: Page 40
+### Page 0: Setting main page
+## Min Clear: Page 10
+## Max Clear: Page 20
+## Min Rain: Page 30
+## Max Rain: Page 40
 
 
 
@@ -24,25 +25,25 @@ $dialog show @s {\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Minimum Weather is Clear: $(minClear)"\
+                text: "Minimum Weather is Clear: $(rtMinutesMinimumWeatherIsClear)"\
             }\
         },\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Maximum Weather is Clear: $(maxClear)"\
+                text: "Maximum Weather is Clear: $(rtMinutesMaximumWeatherIsClear)"\
             }\
         },\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Minimum Weather is Rain: $(minRain)"\
+                text: "Minimum Weather is Rain: $(rtMinutesMinimumWeatherIsRain)"\
             }\
         },\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
-                text: "Maximum Weather is Rain: $(maxRain)"\
+                text: "Maximum Weather is Rain: $(rtMinutesMaximumWeatherIsRain)"\
             }\
         },\
         {\

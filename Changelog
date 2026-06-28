@@ -1,6 +1,16 @@
 ## Changelog
 
-# 26.5.0 (actual/Mainbranch)
+# 26.5.1
+New:
+- Updatefunction before 26.5.1 up to 26.5.1
+Changes:
+- Calculation: 
+- - Old: Realtime Minutes to ingame house to ticks
+- - New: Realtime Minutes to ticks
+Remove:
+- Settings for timings over scoreboard
+
+# 26.5.0
 Changes:
 - rename all mcfuncions.
 -- Now only 2 functions have clear names:

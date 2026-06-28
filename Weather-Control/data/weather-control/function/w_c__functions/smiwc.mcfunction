@@ -1,8 +1,11 @@
 ### set minimum weather clear
 
+## Check value is greater or equal then maximum
+$execute if score @s WeatherCycleV matches $(m).. run tellraw @s "Value for minimum weather clear is equal or greater than for maximum weather clear \n No changings !!!"
+$execute if score @s WeatherCycleV matches $(m).. run return -1
 
-$execute if score @s WeatherCycleV matches $(maxClear).. run tellraw @s "Value for minimum weather clear is equal or greater than for maximum weather clear \n No changings !!!"
-$execute if score @s WeatherCycleV matches $(maxClear).. run return -1
+## Write new value in data storage
+execute store result storage weather:values data.rtMinutesMinimumWeatherIsClear int 1 run scoreboard players get @s WeatherCycleV
 
-execute store result score _hoursClearMin WeatherCycle run scoreboard players get @s WeatherCycleV
-execute store result storage weather:values data.minToRain int 1000 run scoreboard players get @s WeatherCycleV
+## Debug
+# tellraw @a [{text:"----"},{score:{name:"@s",objective:"WeatherCycleV"}}]
