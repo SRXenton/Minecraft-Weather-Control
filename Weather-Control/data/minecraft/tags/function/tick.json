@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "weather-control:w_c__tick/uv",
         "weather-control:w_c__tick/csw",
         "weather-control:w_c__tick/ts"
     ]
