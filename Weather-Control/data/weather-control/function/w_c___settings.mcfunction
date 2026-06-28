@@ -1,15 +1,14 @@
-## Start function for dialog window
-## Preparing storage and call dialog window
+### Start function for dialog window
+### Preparing storage and call dialog window
 
-# Clear and fill with empty value storage temp
-data remove storage weather:values temp
+## create temp object in data storage
 data merge storage weather:values {temp:{}}
 
-# Fill storage temp with actual values
-execute store result storage weather:values temp.minClear int 1 run scoreboard players get _hoursClearMin WeatherCycle
-execute store result storage weather:values temp.maxClear int 1 run scoreboard players get _hoursClearMax WeatherCycle
-execute store result storage weather:values temp.minRain int 1 run scoreboard players get _hoursRainMin WeatherCycle
-execute store result storage weather:values temp.maxRain int 1 run scoreboard players get _hoursRainMax WeatherCycle
+## Copy data from data storage to temp
+data modify storage weather:values temp set from storage weather:values data
 
-# Call function with storage temp
+## Call function with storage temp
 function weather-control:w_c__pages/p0 with storage weather:values temp
+
+## Remove temp from data storage
+data remove storage weather:values temp

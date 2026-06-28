@@ -1,0 +1,9 @@
+Changes:
+    Old calculation: Realtime minutes to ingame hours to ticks
+    New calculation: Realtime Minutes to ticks
+        - Rename values in data storage and scorebords
+
+Remove:
+    Settingsoption: Change timings over scorebords
+
+    

@@ -1,0 +1,40 @@
+Data Storages:
+
+weather:values {
+    data:{
+        rtMinutesMinimumWeatherIsClear: INT # Since 26.5.1, Init: 120
+        rtMinutesMaximumWeatherIsClear: INT # Since 26.5.1  Init: 180
+        rtMinutesMinimumWeatherIsRain: INT # Since 26.5.1   Init: 10
+        rtMinutesMaximumWeatherIsRain: INT # Since 26.5.1   Init: 15
+        minToClear: INT # Until 26.5.0
+        maxToClear: INT # Until 26.5.0
+        minToRain: INT # Until 26.5.0
+        maxToRain: INT # Until 26.5.0
+    },
+    temp:{} #Optional, will be delete after use
+}
+
+
+Scoreboards:
+WeatherCycle, dummy ->  No Player Values, Only Fake Players
+    _isSwitch           0/1 fix,            Init: 0
+    _nextWeatherClear   dynamic (ticks),    Init: 0
+    _nextWeatherRain    dynamic (ticks),    Init: 0
+    _ticksClearMax      dynamic (ticks),    Init: 0                     Note: Since 26.5.1
+    _ticksClearMin      dynamic (ticks),    Init: 0                     Note: Since 26.5.1
+    _ticksRainMax       dynamic (ticks),    Init: 0                     Note: Since 26.5.1
+    _ticksRainMin       dynamic (ticks),    Init: 0                     Note: Since 26.5.1
+    #60                 60 fix,             Init: 60
+    #20                 20 fix,             Init: 20
+    #is_active          1 fix               Init: 0, after Init is completed 1
+    _hoursClearMax      fix                 Init: 180                   Note: Until 26.5.0
+    _hoursClearMin      fix                 Init: 120                   Note: Until 26.5.0
+    _hoursRainMax       fix                 Init: 8                     Note: Until 26.5.0
+    _hoursRainMin       fix                 Init: 3                     Note: Until 26.5.0
+    #hoursInTicks       1000 fix            Init: 1000                  Note: Until 26.5.0
+
+
+WeatherCycleSP, trigger -> No Fake Player, only Player
+    Note: For Settingpages
+WeatherCycleV, trigger -> No Fake Player, only Player
+    Note: For Values from Settings
