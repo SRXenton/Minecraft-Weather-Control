@@ -3,7 +3,7 @@ Minecraft datapack for own weather control, with option to make over scoreboard 
 <br>
 Datapack is made for Minecraft Java<br>
 Branches:
-- Main: The actual datapack verion V26.5.0<br>
+- Main: The actual datapack verion V26.5.2<br>
 - W_C-V26.4.1: Datapack version V26.4.1 is tested in MC V1.21.11 and V26.1.x
 - v1.21.6-1.21.10: MC Version 1.21.6 to 1.21.10 and tested<br>
 - V1.21.11+: MC Version 1.21.11, 26.1, 26.1.1 and tested<br>
