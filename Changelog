@@ -1,4 +1,8 @@
 ## Changelog
+# 26.5.2
+Remove Bug
+- Calculation: _nextWeatherClear
+- Calculation: _nextWeatherRain
 
 # 26.5.1
 New:
