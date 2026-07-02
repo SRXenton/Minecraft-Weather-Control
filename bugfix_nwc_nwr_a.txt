@@ -1,0 +1,3 @@
+Scorebaordvalues wrong:
+    _nextWeatherRain will calculated by _ticksRainMax and _ticksRainMin
+    _nextWeatherClear will calculated by _ticksClearMax and _ticksClearMin
