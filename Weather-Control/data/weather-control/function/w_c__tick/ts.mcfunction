@@ -1,6 +1,7 @@
 ### Tick Switch
 ### This function is called by tick.json for setting pages (SP)
 
+
 ## Prepare storage: Preparing Change Value
 execute as @p[scores={WeatherCycleV=1..}] run function weather-control:w_c__functions/pcv
 
@@ -15,6 +16,14 @@ execute as @p[scores={WeatherCycleSP=30}] run function weather-control:w_c__page
 
 ## Page 40: Maximum Rain
 execute as @p[scores={WeatherCycleSP=40}] run function weather-control:w_c__pages/p40 with storage weather:values data
+
+
+## Page 101: dialog confirm toggle gamerule
+execute as @p[scores={WeatherCycleSP=101}] run function weather-control:w_c__pages/p101 with storage weather:values data
+
+## Page 102: toggle gamerule
+execute as @p[scores={WeatherCycleSP=102}] run function weather-control:w_c__pages/p102 with storage weather:values data
+
 
 ## Reset scorebord and Pages
 execute as @a[scores={WeatherCycleSP=1}] run function weather-control:w_c__functions/rp
