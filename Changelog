@@ -1,4 +1,9 @@
 ## Changelog
+# 26.6.0
+New Change Option in Settings
+- Disable/Enable Chatoutput from command feedback, like trigger commands - gamerule: send_command_feedback
+
+
 # 26.5.2
 Remove Bug
 - Calculation: _nextWeatherClear
