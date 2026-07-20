@@ -1,4 +1,5 @@
-tellraw @a "P101"
+## Debug
+# tellraw @a "P101"
 
 scoreboard players enable @s WeatherCycleSP
 

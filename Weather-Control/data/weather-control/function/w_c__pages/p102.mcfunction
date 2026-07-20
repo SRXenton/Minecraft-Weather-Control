@@ -1,7 +1,7 @@
-tellraw @a "P102"
+## Debug
+# tellraw @a "P102"
 
-execute if score _gr WeatherCycleSP matches 1 run gamerule send_command_feedback false
-execute unless score _gr WeatherCycleSP matches 1 run gamerule send_command_feedback true
+function weather-control:w_c__functions/tgr
 
 scoreboard players set @s WeatherCycleSP 0
 
