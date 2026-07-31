@@ -1,0 +1,4 @@
+Setting window new Option field for swicth Gamerule, chatoutput für commands
+-> change Gamesrule
+    -> check gamerule status, show in dialog window
+    -> switch, possible: hook, push text

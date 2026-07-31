@@ -3,8 +3,10 @@
 ## Max Clear: Page 20
 ## Min Rain: Page 30
 ## Max Rain: Page 40
+## Toggle Gamerule confirm: Page 101
 
-
+## Debug
+#tellraw @a "P0"
 
 scoreboard players enable @s WeatherCycleSP
 
@@ -15,6 +17,23 @@ $dialog show @s {\
         bold: true\
     },\
     body:[\
+        {\
+            "type": "minecraft:plain_message",\
+            "width": 300,\
+            "contents": [\
+                {text: "Surpress Trigger chatoutput: ","underlined":false},\
+                {text: "[","underlined": false, color:"red"},\
+                {text: "$(gamerule)","underlined": false,click_event:{action:"run_command",command:"trigger WeatherCycleSP set 101"}},\
+                {text: "]","underlined": false, color:"red"},\
+            ]\
+        },\
+        {\
+            "type": "minecraft:plain_message",\
+            "contents": {\
+                text: "\n",\
+                "underlined": false\
+            }\
+        },\
         {\
             "type": "minecraft:plain_message",\
             "contents": {\
