@@ -7,6 +7,9 @@ data merge storage weather:values {temp:{}}
 ## Copy data from data storage to temp
 data modify storage weather:values temp set from storage weather:values data
 
+## Preparing dialog p0 with gamerule status
+function weather-control:w_c__functions/pd
+
 ## Call function with storage temp
 function weather-control:w_c__pages/p0 with storage weather:values temp
 
