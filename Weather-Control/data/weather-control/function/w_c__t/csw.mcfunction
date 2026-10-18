@@ -8,11 +8,11 @@ execute if score _nextWeatherRain WeatherCycle matches 1.. run scoreboard player
 execute if score _nextWeatherClear WeatherCycle matches 1.. if score _nextWeatherRain WeatherCycle matches 0 run scoreboard players remove _nextWeatherClear WeatherCycle 1
 
 ## Functions for weather switch
-execute if score _nextWeatherRain WeatherCycle matches 0 if score _isSwitch WeatherCycle matches 0 run function weather-control:w_c__functions/tr
-execute if score _nextWeatherClear WeatherCycle matches 0 if score _isSwitch WeatherCycle matches 1 run function weather-control:w_c__functions/tc
+execute if score _nextWeatherRain WeatherCycle matches 0 if score _isSwitch WeatherCycle matches 0 run function weather-control:w_c__f/tr
+execute if score _nextWeatherClear WeatherCycle matches 0 if score _isSwitch WeatherCycle matches 1 run function weather-control:w_c__f/tc
 
 ## Function calculate new random values for weather switches
-execute if score _nextWeatherClear WeatherCycle matches 0 if score _nextWeatherRain WeatherCycle matches 0 run function weather-control:w_c__functions/cfr
+execute if score _nextWeatherClear WeatherCycle matches 0 if score _nextWeatherRain WeatherCycle matches 0 run function weather-control:w_c__f/cfr
 
 ## Debug:
 # tellraw Xenton_de "Debug csw"
