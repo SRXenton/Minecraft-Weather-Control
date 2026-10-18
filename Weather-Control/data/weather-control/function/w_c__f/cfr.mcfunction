@@ -3,13 +3,13 @@
 
 
 ## Calculate minimum ticks for weather clear
-function weather-control:w_c__functions/crtmtt {sbv:"_ticksClearMin", dsv:"rtMinutesMinimumWeatherIsClear"}
+function weather-control:w_c__f/crtmtt {sbv:"_ticksClearMin", dsv:"rtMinutesMinimumWeatherIsClear"}
 ## Calculate maximum ticks for weather clear
-function weather-control:w_c__functions/crtmtt {sbv:"_ticksClearMax", dsv:"rtMinutesMaximumWeatherIsClear"}
+function weather-control:w_c__f/crtmtt {sbv:"_ticksClearMax", dsv:"rtMinutesMaximumWeatherIsClear"}
 ## Calculate minimum ticks for weather rain
-function weather-control:w_c__functions/crtmtt {sbv:"_ticksRainMin", dsv:"rtMinutesMinimumWeatherIsRain"}
+function weather-control:w_c__f/crtmtt {sbv:"_ticksRainMin", dsv:"rtMinutesMinimumWeatherIsRain"}
 ## Calculate maximum ticks for weather rain
-function weather-control:w_c__functions/crtmtt {sbv:"_ticksRainMax", dsv:"rtMinutesMaximumWeatherIsRain"}
+function weather-control:w_c__f/crtmtt {sbv:"_ticksRainMax", dsv:"rtMinutesMaximumWeatherIsRain"}
 
 ## Crate in data storage the object temp
 data modify storage weather:values temp set value {}
@@ -21,7 +21,7 @@ execute store result storage weather:values temp.maxRain int 1 run scoreboard pl
 execute store result storage weather:values temp.minRain int 1 run scoreboard players get _ticksRainMin WeatherCycle
 
 ## Call function for random calculate and write it in scoreboard
-function weather-control:w_c__functions/r with storage weather:values temp
+function weather-control:w_c__f/r with storage weather:values temp
 
 ## Remove temp from data storage
 data remove storage weather:values temp

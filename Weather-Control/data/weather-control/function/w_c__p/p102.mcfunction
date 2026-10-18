@@ -1,7 +1,7 @@
 ## Debug
 # tellraw @a "P102"
 
-function weather-control:w_c__functions/tgr
+function weather-control:w_c__f/tgr
 
 scoreboard players set @s WeatherCycleSP 0
 

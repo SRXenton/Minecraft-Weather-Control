@@ -42,7 +42,7 @@ scoreboard players set #20 WeatherCycle 20
 weather clear
 
 ## Calculate random values and fill scoreboard WeatherCycle
-function weather-control:w_c__functions/cfr
+function weather-control:w_c__f/cfr
 
 
 ###---------------------------------- Not in use

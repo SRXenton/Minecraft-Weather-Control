@@ -1,4 +1,13 @@
 ## Changelog
+# 26.6.1
+Refactor folder naming
+Testing after refactoring in:
+- 1.21.11 - Done and Run
+- 26.1 - Done and Run
+- 26.1.x - Done and Run
+- 26.2 - Done and Run
+- 26.3 - Done and Run
+
 # 26.6.0
 New Change Option in Settings
 - Disable/Enable Chatoutput from command feedback, like trigger commands - gamerule: send_command_feedback
